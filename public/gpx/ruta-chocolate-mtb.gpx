@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Firebase Studio Dummy GPX"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Ruta del Chocolate MTB Challenge - Dummy Route</name>
+    <desc>A minimal GPX file for Ruta del Chocolate MTB Challenge.</desc>
+  </metadata>
+  <trk>
+    <name>Dummy Track Chocolate MTB</name>
+    <trkseg>
+      <trkpt lat="10.4000" lon="-83.9500"><ele>70</ele><time>2024-01-01T09:00:00Z</time></trkpt>
+      <trkpt lat="10.4010" lon="-83.9510"><ele>72</ele><time>2024-01-01T09:05:00Z</time></trkpt>
+      <trkpt lat="10.4020" lon="-83.9520"><ele>68</ele><time>2024-01-01T09:10:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

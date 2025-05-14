@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%; /* Light Gray #F5F5F5 */
+    --foreground: 0 0% 20%; /* Dark Gray for text */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: 123 44% 38%; /* Green #388E3C */
+    --primary-foreground: 0 0% 98%; /* Light color for text on primary */
+    --secondary: 0 0% 90%; /* Slightly darker gray than background */
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 36 100% 50%; /* Orange #FF9800 */
+    --accent-foreground: 0 0% 100%; /* White for text on accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 123 44% 38%; /* Green for focus rings */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 240 6% 10%; /* Dark Gray */
+    --foreground: 0 0% 95%; /* Light Gray */
+    --card: 240 6% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 6% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 123 44% 45%; /* Brighter Green for dark mode */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 5% 18%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 240 5% 18%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 36 100% 55%; /* Brighter Orange for dark mode */
+    --accent-foreground: 0 0% 10%; /* Dark text for orange accent in dark mode */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 25%;
+    --input: 240 5% 25%;
+    --ring: 123 44% 45%; /* Green for focus rings */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 123 44% 45%; /* Match primary */
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 123 44% 45%; /* Match ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* font-family removed to allow Next.js font optimization to take full effect via layout.tsx */
+  }
+}
+
+/* Custom component styles or overrides */
+@layer components {
+  /* Style for the MapLibre GL JS Popup Close Button */
+  .maplibregl-popup-close-button {
+    @apply flex items-center justify-center; /* Tailwind utilities for flex centering */
+    padding: 0 !important; /* Explicitly reset padding */
+    width: 40px !important;   /* Increased width */
+    height: 40px !important;  /* Increased height */
+    min-width: 40px !important; /* Ensure it's not smaller */
+    min-height: 40px !important;/* Ensure it's not smaller */
+    font-size: 36px !important; /* Larger '×' symbol */
+    line-height: 40px !important; /* Helps center the symbol vertically in the button */
+    /* Optional: Add themed styling if desired */
+    /* border-radius: 50%; */
+    /* background-color: hsl(var(--card)); */
+    /* color: hsl(var(--foreground)); */
+  }
+
+  /* Optional: Hover effect for the close button */
+  /*
+  .maplibregl-popup-close-button:hover {
+    background-color: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+  }
+  */
+}

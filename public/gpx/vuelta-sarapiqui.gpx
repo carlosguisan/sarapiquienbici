@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Firebase Studio Dummy GPX"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Vuelta al Sarapiquí Clásica - Dummy Route</name>
+    <desc>A minimal GPX file for Vuelta al Sarapiquí Clásica.</desc>
+  </metadata>
+  <trk>
+    <name>Dummy Track Sarapiqui</name>
+    <trkseg>
+      <trkpt lat="10.4550" lon="-84.0100"><ele>50</ele><time>2024-01-01T08:00:00Z</time></trkpt>
+      <trkpt lat="10.4560" lon="-84.0110"><ele>52</ele><time>2024-01-01T08:05:00Z</time></trkpt>
+      <trkpt lat="10.4570" lon="-84.0120"><ele>55</ele><time>2024-01-01T08:10:00Z</time></trkpt>
+    </trkseg>
+  </trk>
+</gpx>
